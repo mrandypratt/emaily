@@ -1,7 +1,9 @@
-Objective:
+# Objective:
 Allow Users, predominantly Startup Product Managers, to create an email campaign in order to ask users for feedback then receive, store, and use that feedback.
 
-Pages:
+# Layout
+
+## Pages:
 0. Template:
   Navbar
     header
@@ -24,10 +26,13 @@ Pages:
 6. /%user%/create-campaign
 7. /%user%/
 
-Login
+## Login
   b. Create account
 2. User Account Page
   a. User can Add payment type and credits via Stripe
   b. User has view of any active Campaigns
   c. User creates a new "Campaign"
 3. New Campaign Page
+
+# Steps to create
+1. Download Express (npm init, git init, install express as dependency, install nodemon)
