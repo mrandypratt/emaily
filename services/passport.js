@@ -20,7 +20,8 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: "https://still-plateau-30461.herokuapp.com/auth/google/callback"
+      callbackURL: "https://still-plateau-30461.herokuapp.com/auth/google/callback",
+      proxy: true
     },
     (accessToken, refreshToken, profile, done) => {
       User.findOne({ googleID: profile.id }).then((existingUser) => {
